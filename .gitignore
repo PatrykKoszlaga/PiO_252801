@@ -1,0 +1,22 @@
+# Foldery IDE
+.idea/
+.vscode/
+
+# Pliki kompilacji i binaria
+bin/
+target/
+build/
+*.o
+*.exe
+*.class
+*.jar
+*.dll
+
+# Pliki tymczasowe
+*.log
+*.tmp
+*.swp
+
+# Pliki zależności (np. dla Pythona, Node.js, Java)
+node_modules/
+venv/

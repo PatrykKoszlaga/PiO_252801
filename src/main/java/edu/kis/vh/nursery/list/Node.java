@@ -5,7 +5,7 @@ public class Node {
     public int value;
     public Node prev, next;
 
-    public node(int i) {
+    public Node(int i) {
         value = i;
     }
 

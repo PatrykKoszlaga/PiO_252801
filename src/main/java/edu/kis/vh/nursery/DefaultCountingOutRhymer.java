@@ -4,6 +4,8 @@ public class DefaultCountingOutRhymer {
 
     private int[] NUMBERS = new int[12];
 
+    public int total = TOTALDEFAULT;
+    
     public void countIn(int in) {
         if (!isFull())
             NUMBERS[++total] = in;

@@ -3,6 +3,26 @@ package edu.kis.vh.nursery;
 import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import edu.kis.vh.nursery.factory.RhymersFactory;
 
+/*
+Testy działają poprawnie
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running edu.kis.vh.nursery.RhymersJUnitTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s -- in edu.kis.vh.nursery.RhymersJUnitTest
+
+Results:
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time:  3.043 s
+Finished at: 2025-04-02T11:04:20+02:00
+------------------------------------------------------------------------
+*/
+
 class RhymersDemo {
 
     public static void main(String[] args) {
@@ -38,9 +58,10 @@ class RhymersDemo {
     }
 
     private static void test3(DefaultCountingOutRhymer[] rhymers) {
-        for (int i = 0; i < rhymers.length; i++) {
-            while (!rhymers[i].callCheck())
-                System.out.print(rhymers[i].countOut() + "  ");
+        for (DefaultCountingOutRhymer rhymer : rhymers) {
+            while (!rhymer.callCheck()) {
+                System.out.print(rhymer.countOut() + "  ");
+            }
             System.out.println();
         }
     }
